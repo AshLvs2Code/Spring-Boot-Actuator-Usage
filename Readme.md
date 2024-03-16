@@ -1,6 +1,6 @@
 Spring Boot Actuators are a set of production-ready features included in Spring Boot to help you monitor and manage your application. They provide endpoints that allow you to monitor various aspects of your application, such as health, metrics, environment information, and more.
 
-To configure Spring Boot Actuators, you typically use properties in your `application.properties` file.
+To configure Spring Boot Actuators, you typically use properties in your `application.properties` file(Checkout the application properties file of this project).
 Here are some common properties related to Spring Boot Actuators:
 
 1. **Enable Actuators**: By default, Spring Boot Actuators are enabled. However, if you need to disable them for any reason, you can do so using the following property:
@@ -13,9 +13,9 @@ Here are some common properties related to Spring Boot Actuators:
    management.endpoints.web.exposure.include=health,info,metrics,env
    ```
 
-http://localhost:8080/actuator/health
-http://localhost:8080/actuator/info
-http://localhost:8080/actuator/metrices
+http://localhost:8080/actuator/health,
+http://localhost:8080/actuator/info ,
+http://localhost:8080/actuator/metrices ,
 http://localhost:8080/actuator/env
 
 3. **Security**: Actuator endpoints are sensitive and may expose sensitive information about your application. You can secure these endpoints with authentication and authorization:
